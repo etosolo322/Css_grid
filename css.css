@@ -1,0 +1,32 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+.grid{
+    background: grey;
+    display: grid;
+    grid-gap: 40px;
+    grid-template-columns: repeat(6,[col] 1fr);
+    grid-template-rows: repeat(3,[row] 1fr);
+}
+.grid-item{
+    background: white;
+    min-height: 80px;
+}
+.item1{
+    grid-column: span 2;
+}
+.item2{
+    grid-column:col 3 / col 5;
+    grid-row: row 1 / row 3;
+}
+.item3{
+    grid-area: 1/5/3/6;
+}
+.item9{
+    grid-area: 3/2/4/4;
+}
+.item10{
+    grid-area: 3/4/4/6;
+}
